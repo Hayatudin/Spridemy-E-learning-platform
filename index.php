@@ -385,3 +385,11 @@ $result = mysqli_query($conn, $query);
   </main>
 
   <?php include "../php/footer.php"; ?>
+  <!--------------------- link js ------------------->
+
+  <script type="module" src="../mylearn.js"></script>
+  <script type="module" src="../enroll.js"></script>
+  <script src="../index.js"></script>
+</body>
+
+</html>
