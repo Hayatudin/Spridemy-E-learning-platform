@@ -193,3 +193,45 @@ $result = mysqli_query($conn, $query);
         </div>
       </div>
     </section>
+
+    <!-------------------- courses --------------->
+    <section class=" flex flex-col items-center gap-2 mb-4" id="course-id">
+      <div class="flex items-center gap-2 py-2">
+        <img draggable="false" src="../icons/Mask group.png" alt="" />
+        <h4 class="text-yellow-500 font-bold">Our courses</h4>
+      </div>
+      <h2 class="text-2xl font-bold">Explore our categories</h2>
+      <p class="text-center w-[90%] category">
+        Discover a world of coding possibilities! Our carefully curated
+        categories cover everything empowering you to learn and grow in your
+        chosen tech career.
+      </p>
+
+      <div class="px-12 w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" id="courseContainer">
+        <?php while ($row = $result->fetch_assoc()): ?>
+          <div class="flex flex-col sm:my-3 items-center bg-gray-800 transition-300 w-[90%] px-1 py-1 rounded-lg">
+
+            <img src="../php/view_image.php?id=<?php echo $row['id']; ?>" alt="image not found" draggable="false" />
+            <div class="flex flex-col sm:my-3 items-center gap-2 w-[90%] ">
+
+              <p class="text-xl font-bold mt-1 md:text-lg"><?php echo $row['course_name']; ?></p>
+              <div class="flex items-center gap-2 self-end">
+                <p>4.8</p>
+                <img
+                  draggable="false"
+                  class="w-16"
+                  src="../thumbnail/rate.png"
+                  alt="" />
+              </div>
+              <form>
+                <!-- <input type="hidden" name="course_image" value="<?php echo $row['images']; ?>"> -->
+                <input type="hidden" name="course_name" value="<?php echo $row['course_name']; ?>">
+                <input type="hidden" name="course_id" value="<?php echo $row['id']; ?>">
+                <input type="submit" name="Enroll" value="Enroll now" class="bg-white text-black px-4 rounded-sm py-1 cursor-pointer" onclick="alert('Please sign up or Log in first!')" />
+              </form>
+            </div>
+          </div>
+        <?php endwhile; ?>
+      </div>
+
+    </section>
