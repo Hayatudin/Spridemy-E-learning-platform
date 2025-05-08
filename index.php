@@ -319,3 +319,40 @@ $result = mysqli_query($conn, $query);
         </div>
       </div>
     </section>
+
+    <!-------------------- coming course --------------->
+
+    <section
+      class="flex flex-col items-start gap-4 px-4 w-full bg-gray-800 box-border py-6 mb-8 mt-14 ">
+      <div class="flex items-center gap-1 px-8 py-4">
+        <i class="ri-timer-flash-line text-3xl text-red-600"></i>
+        <h1 class="text-start font-bold text-3xl text-yellow-500">Upcoming Courses to Elevate Your Skills</h1>
+      </div>
+      <div class="px-12 w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+        <div class="w-[90%] h-fit rounded-md relative group " style="background: url('../coming/Computing.jpg') no-repeat center; background-size: cover; min-height: 400px">
+
+          <div class="bg-black transition-opacity duration-500 cursor-pointer ease-in-out opacity-80 absolute top-0 left-0 w-full h-full flex items-center justify-center px-2 py-4 hidden group-hover:flex">
+            <p class="text-xl text-white font-bold text-center">Cloud Computing <br><span class="text-sm text-yellow-500">and DevOps</span> </p>
+          </div>
+        </div>
+        <div class="w-[90%] h-fit rounded-md relative group " style="background: url('../coming/game.jpg') no-repeat center; background-size: cover; min-height: 400px">
+
+          <div class="bg-black transition-opacity duration-500 cursor-pointer ease-in-out opacity-80 absolute top-0 left-0 w-full h-full flex items-center justify-center px-2 py-4 hidden group-hover:flex">
+            <p class="text-xl text-white font-bold text-center">Game Development <span class="text-sm text-yellow-500">with Unity & Unreal</span> </p>
+          </div>
+        </div>
+        <div class="w-[90%] h-fit rounded-md relative group " style="background: url('../coming/Blockchain.png') no-repeat center; background-size: cover; min-height: 400px">
+
+          <div class="bg-black transition-opacity duration-500 cursor-pointer ease-in-out opacity-80 absolute top-0 left-0 w-full h-full flex items-center justify-center px-2 py-4 hidden group-hover:flex">
+            <p class="text-xl text-white font-bold text-center">Blockchain <br><span class="text-sm text-yellow-500">and Web3 Development</span> </p>
+          </div>
+        </div>
+        <div class="w-[90%] h-fit rounded-md relative group " style="background: url('../coming/iot.jpg') no-repeat center; background-size: cover; min-height: 400px">
+
+          <div class="bg-black transition-opacity duration-500 cursor-pointer ease-in-out opacity-80 absolute top-0 left-0 w-full h-full flex items-center justify-center px-2 py-4 hidden group-hover:flex">
+            <p class="text-xl text-white font-bold text-center">IoT <br><span class="text-sm text-yellow-500">and Embedded Systems</span> </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
