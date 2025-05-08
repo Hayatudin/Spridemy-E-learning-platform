@@ -260,3 +260,62 @@ $result = mysqli_query($conn, $query);
         <img src="../image/spridemy certificate-01.jpg" class=" shadow-lg">
       </div>
     </section>
+
+    <!-------------------- accordion --------------->
+
+    <section
+      class="px-12 flex sm:flex-col items-center gap-3 mt-8 mb-8 lg:flex-row pb-3">
+      <div>
+        <img draggable="false" src="../image/accordion.png" width="100%" class="" />
+      </div>
+      <div class="flex flex-col items-center gap-5 lg:w-1/2 sm:w-[90%]">
+        <h2 class="font-bold text-white text-2xl">
+          Unlock Your Full Potential with <span class="text-yellow-500">Step-by-Step Learning</span>
+        </h2>
+        <div
+          class="flex items-center bg-gray-800 rounded-md box-border px-2 py-2 gap-2 w-full">
+          <div>
+            <img draggable="false" class="w-24" src="../icons/course.png" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-yellow-500 ">In-Depth Courses for Every Level</h3>
+            <p class="text-sm text-gray-400">
+              Explore structured lessons designed for beginners and advanced
+              learners alike, covering everything you need to know
+              about coding and development.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center bg-gray-800 rounded-md box-border px-2 py-2 gap-2 w-full">
+          <div>
+            <img draggable="false" class="w-16" src="../icons/Quiz.png" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-yellow-500 ">
+              Interactive Quizzes to Test Knowledge
+            </h3>
+            <p class="text-sm text-gray-400">
+              Reinforce your learning through engaging quizzes that challenge
+              your understanding and highlight areas to focus on.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center bg-gray-800 rounded-md box-border px-2 py-2 gap-2 w-full">
+          <div class="ml-1">
+            <img draggable="false" class="lg:w-16 sm:w-24" src="../icons/License.png" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-yellow-500 ">
+              Hands-On Practice and Certification
+            </h3>
+            <p class="lg:text-sm sm:text-xs text-gray-400">
+              Apply your skills in real-world scenarios and earn a
+              professional certificate to showcase your expertise and
+              dedication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
