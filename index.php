@@ -356,3 +356,32 @@ $result = mysqli_query($conn, $query);
 
       </div>
     </section>
+
+    <!-------------------- comments --------------->
+
+    <section
+      class="px-12 flex sm:flex-col lg:flex-row items-center justify-between gap-3 mt-6 mb-6">
+      <div class="flex flex-col items-start justify-center gap-2 mb-3">
+        <h2 class="text-3xl font-bold">
+          What our <span class="text-yellow-500">clients</span> say!
+        </h2>
+        <p class="text-lg text-gray-400">
+          see how our web application helped clients achieve their goals
+        </p>
+        <button class="bg-yellow-500 px-5 py-1 rounded-sm mt-3" id="userComment">Write your idea</button>
+        <div class="rounded-lg hidden w-full" id="commentBox">
+          <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="flex flex-col items-center gap-2 mt-4 p-4 ">
+            <textarea name="commentarea" id="comment" placeholder="Write your idea..." class=" min-w-full text-white bg-black outline-none"></textarea>
+            <button class="bg-green-600 px-5 py-1 rounded-sm cursor-pointer" onclick="alert('please login or sign up first');">Submit</button>
+          </form>
+        </div>
+
+      </div>
+      <div class="lg:w-[50%] sm:w-full ">
+        <img draggable="false" src="../image/userscomment-01.png" class="w-full" />
+      </div>
+    </section>
+
+  </main>
+
+  <?php include "../php/footer.php"; ?>
