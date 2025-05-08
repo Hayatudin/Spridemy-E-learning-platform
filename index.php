@@ -141,3 +141,55 @@ $result = mysqli_query($conn, $query);
 
       </div>
     </div>
+
+    <main>
+    <!-------------------- counting number --------------->
+    <section
+      class="w-full relative bg-gray-800 flex items-center py-5 h-fit z-30">
+      <div
+        class="flex justify-between w-full sm:flex-col items-center gap-2 text-right p-4 lg:flex-row lg:justify-center lg:gap-4 lg:py-3  box-border overflow-hidden">
+        <div
+          class="flex boxes flex-col items-center gap-2 py-2 my-2 lg:w-1/5">
+          <img
+            draggable="false"
+            class="w-5"
+            src="../icons/Knowledge.png"
+            alt="" />
+          <div class="flex items-center ">
+            <h2 class="text-2xl font-bold sm:text-3xl contain" data-num="10" id="numb">0</h2>
+            <h2 class="text-2xl font-bold sm:text-3xl">+</h2>
+          </div>
+
+          <p>courses</p>
+        </div>
+        <div class="flex boxes flex-col items-center gap-2 py-2 lg:w-1/5">
+          <img
+            draggable="false"
+            class="w-5"
+            src="../icons/Graduate.png"
+            alt="" />
+          <div class="flex items-center ">
+            <h2 class="text-2xl font-bold sm:text-3xl" data-num="1000" id="numb">0</h2>
+            <h2 class="text-2xl font-bold sm:text-3xl">+</h2>
+          </div>
+          <p>Students</p>
+        </div>
+        <div class="flex boxes flex-col items-center gap-2 py-2 lg:w-1/5">
+          <img draggable="false" class="w-5" src="../icons/Teacher.png" alt="" />
+          <div class="flex items-center ">
+            <h2 class="text-2xl font-bold sm:text-3xl" data-num="10" id="numb">0</h2>
+            <h2 class="text-2xl font-bold sm:text-3xl">+</h2>
+          </div>
+          <p>Teacher</p>
+        </div>
+        <div
+          class="flex boxes flex-col items-center gap-2 py-2 border-none lg:w-1/5">
+          <img draggable="false" class="w-5" src="..//icons/Trophy.png" alt="" />
+          <div class="flex items-center ">
+            <h2 class="text-2xl font-bold sm:text-3xl" data-num="95" id="numb">0</h2>
+            <h2 class="text-2xl font-bold sm:text-3xl">%</h2>
+          </div>
+          <p>Success rate</p>
+        </div>
+      </div>
+    </section>
