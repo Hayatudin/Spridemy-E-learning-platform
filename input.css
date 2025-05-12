@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black text-white tracking-wider;
+}
+
+.nav-link {
+    @apply text-lg font-bold duration-300;
+}
+
+.nav-links {
+    @apply text-lg font-bold duration-300;
+}
+
+
+
+.boxes {
+    /* border-bottom: 2px solid rgb(255, 115, 0); */
+    margin: 10px 0;
+}
+
+
+
+.category {
+    font-size: 12px;
+    color: rgb(191, 191, 191);
+
+}
+
+.courses {
+    margin-top: 10px;
+    background-color: rgb(38, 38, 38);
+    border: 5px solid rgb(122, 122, 122);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.description {
+    font-size: 8px;
+    color: rgb(194, 194, 194);
+}
+
+.accordion-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: orange;
+}
