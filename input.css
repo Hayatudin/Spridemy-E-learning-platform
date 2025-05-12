@@ -49,3 +49,57 @@ body {
     font-weight: bold;
     color: orange;
 }
+
+.certificate {
+    padding: 10px 5px;
+}
+
+.desc {
+    font-size: 10px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-bottom: 7px;
+}
+
+.links {
+    font-size: 14px;
+}
+
+.cerificateTitle {
+    font-size: 15px;
+}
+
+.roadmap {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../image/roadmap.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.roadDesc {
+    font-size: 8px;
+    color: rgb(191, 191, 191);
+}
+
+.roadbox {
+    width: 100px;
+    font-size: 10px;
+
+}
+
+.profile {
+    border: 1px solid rgb(216, 216, 216);
+
+}
+
+.mouses:hover .mouse {
+    display: block;
+    background-color: orangered;
+
+}
+
+#roadmaps:hover #hoverRoadmap {
+    display: flex;
+
+}
