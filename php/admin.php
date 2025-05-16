@@ -241,3 +241,4 @@ if (!isset($_SESSION['adminUname']) || $_SESSION['Username'] !== 'hayu') {
             </div>
             <div class="hidden" style="padding: 30px 10px 20px 320px;" id="feedback">
                 <h1 class="text-2xl font-bold py-4 text-yellow-500">User Feedback</h1>
+admin page
