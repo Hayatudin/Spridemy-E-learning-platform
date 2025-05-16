@@ -80,3 +80,51 @@ if (!isset($_SESSION['adminUname']) || $_SESSION['Username'] !== 'hayu') {
     }
 }
 
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link x-icon -->
+    <link
+        rel="shortcut icon"
+        href="../image/spridemy-xicon-01.png"
+        type="x-icon" />
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!-- link css -->
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <title>Spridemy/dashboard</title>
+</head>
+
+<body class="bg-black text-white">
+
+    <section class="flex lg:flex-row sm:flex-col top-0 left-0 gap-4 items-start h-full" style="height:100%;">
+
+
+        <div class="flex sm:flex-row lg:flex-col gap-8 lg:py-8 sm:px-3 sm:py-1 container bg-gray-800 fixed" style="width: 300px; height: 100%; ">
+            <h2 class="font-bold text-2xl">Admin.</h2>
+            <div class="flex lg:flex-col sm:flex-row lg:gap-4 sm:justify-evenly">
+                <div class="flex gap-1 items-start cursor-pointer">
+                    <i class="ri-user-3-line"></i>
+                    <span class="sm:hidden lg:block hover:text-yellow-500" id="userLink">User dashboard</span>
+                </div>
+                <div class="flex gap-1 items-start cursor-pointer">
+                    <img src="../Syllabus.png" style="width: 15px;">
+                    <span class="sm:hidden lg:block hover:text-yellow-500" id="courseLink">Course Management</span>
+                </div>
+                <div class="flex gap-1 items-start cursor-pointer">
+                    <i class="ri-chat-1-line"></i>
+                    <span class="sm:hidden lg:block hover:text-yellow-500" id="feedbackLink">Feedback</span>
+                </div>
+                <div>
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="flex gap-1 items-start cursor-pointer">
+                        <i class="ri-mac-line"></i>
+                        <input type="submit" name="user" class="sm:hidden lg:block hover:text-yellow-500" value="Display user screen" />
+                    </form>
+                </div>
