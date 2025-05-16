@@ -62,3 +62,52 @@ if (isset($_SESSION['Username'])) {
       </div>
     </nav>
   </header>
+<!------------ main section  --------------->
+  <main class="flex gap-2 h-full">
+    <div
+      class="bg-gray-800 flex flex-col gap-5 lg:w-[300px] sm:w-12 sticky left-0 overflow-y-auto">
+      <div class="container py-3 border-b-2">
+        <div class="flex gap-2">
+          <img src="../image/Graduate.png" class="w-5" />
+          <h2 class="font-bold text-orange-600 sm:hidden lg:block">
+            Courses
+          </h2>
+        </div>
+        <p class="font-bold text-xl pt-1 sm:hidden lg:block">
+          Frontend Development
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div
+          class="container flex gap-2 cursor-pointer items-center hover:text-gray-300 transition-300 "
+          id="outlineList">
+          <div
+            class="bg-orange-600 rounded-full w-7 h-7 px-3 font-bold text-center">
+            1
+          </div>
+          <p class="sm:hidden lg:block">
+            Introduction to Frontend Development
+          </p>
+        </div>
+        <div
+          class="flex container gap-2 cursor-pointer hover:text-gray-300 transition-300" id="outlineList">
+          <div class="bg-orange-600 rounded-full w-7 h-7 px-3 text-center">
+            2
+          </div>
+          <p class="sm:hidden lg:block">HTML (HyperText Markup Language)</p>
+        </div>
+        <div
+          class="flex container gap-2 cursor-pointer hover:text-gray-300 transition-300" id="outlineList">
+          <div class="bg-orange-600 rounded-full w-7 h-7 text-center">3</div>
+          <p class="sm:hidden lg:block">CSS (Cascading Style Sheets)</p>
+        </div>
+        <div
+          class="flex container gap-2 cursor-pointer hover:text-gray-300 transition-300" id="outlineList">
+          <div class="bg-orange-600 rounded-full w-7 h-7 text-center">4</div>
+          <p class="sm:hidden lg:block" id="outlineList">JavaScript Basics</p>
+        </div>
+        <div
+          class="flex container gap-2 cursor-pointer hover:text-gray-300 transition-300" id="outlineList">
+          <div class="bg-orange-600 rounded-full w-7 h-7 text-center">5</div>
+          <p class="sm:hidden lg:block" id="outlineList">Advanced JavaScript</p>
+        </div>
