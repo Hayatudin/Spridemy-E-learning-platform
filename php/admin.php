@@ -193,3 +193,51 @@ if (!isset($_SESSION['adminUname']) || $_SESSION['Username'] !== 'hayu') {
                     </table>
                 </div>
 
+
+            </div>
+            <div class="hidden" style="padding: 30px 10px 20px 320px;" id="courseManagement">
+                <h1 class="text-2xl font-bold py-4 text-yellow-500">Course Management</h1>
+                <table border="1" class="w-full text-left border-collapse border border-gray-600">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="px-4 py-2 border border-gray-600">No</th>
+                            <th class="px-4 py-2 border border-gray-600">Course Name</th>
+                            <th class="px-4 py-2 border border-gray-600">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $count = 1;
+                        $coursesResults = mysqli_query($conn, "SELECT * FROM course");
+                        while ($row = mysqli_fetch_assoc($coursesResults)) : ?>
+                            <tr class="border border-gray-600">
+                                <td class="px-4 py-2"><?php echo $count++; ?></td>
+                                <td class="px-4 py-2"><?php echo $row['course_name']; ?></td>
+                                <td class="px-4 py-2">
+                                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                                        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                        <input type="submit" class="text-red-500" name="Delete" value="Delete" onclick="return confirm('Are you sure you want to delete this course?')">
+                                    </form>
+
+                                </td>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+                <h2 class="text-2xl font-bold py-4">Add Course</h2>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST" enctype="multipart/form-data">
+                    <div class="flex flex-col gap-1">
+                        <label for="courseName">Course Name:</label>
+                        <input type="text" id="courseName" name="courseName" required class="bg-gray-800 text-white px-2 py-1 rounded-sm outline-none">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="courseImage">Course Image:</label>
+                        <input type="file" id="courseImage" name="courseImage" accept="image/*" required>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit">Add Course</button>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden" style="padding: 30px 10px 20px 320px;" id="feedback">
+                <h1 class="text-2xl font-bold py-4 text-yellow-500">User Feedback</h1>
