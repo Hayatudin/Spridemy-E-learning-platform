@@ -160,3 +160,36 @@ if (!isset($_SESSION['adminUname']) || $_SESSION['Username'] !== 'hayu') {
                         <p class="text-xl"><?php echo $totalCourses; ?></p>
                     </div>
                 </div>
+
+                <!-- Student Table -->
+                <div class="mt-8" style="padding-top: 30px;">
+                    <table border="1" class="w-full text-left border-collapse border border-gray-600">
+
+                        <thead>
+                            <tr class="bg-gray-800 text-white">
+                                <th class="px-4 py-2 border border-gray-600">No</th>
+                                <th class="px-4 py-2 border border-gray-600">Username</th>
+                                <th class="px-4 py-2 border border-gray-600">Full Name</th>
+                                <th class="px-4 py-2 border border-gray-600">Email</th>
+                                <th class="px-4 py-2 border border-gray-600">Phone Number</th>
+                                <th class="px-4 py-2 border border-gray-600">Proficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $count = 1;
+                            while ($row = mysqli_fetch_assoc($studentsResult)) : ?>
+
+                                <tr class="border border-gray-600">
+                                    <td class="px-4 py-2"><?php echo $count++; ?></td>
+                                    <td class="px-4 py-2"><?php echo $row['Username']; ?></td>
+                                    <td class="px-4 py-2"><?php echo $row['FullName']; ?></td>
+                                    <td class="px-4 py-2"><?php echo $row['email']; ?></td>
+                                    <td class="px-4 py-2"><?php echo $row['pNumber']; ?></td>
+                                    <td class="px-4 py-2"><?php echo $row['proficiency']; ?></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        </tbody>
+                    </table>
+                </div>
+
