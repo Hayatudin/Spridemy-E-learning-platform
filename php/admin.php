@@ -128,3 +128,35 @@ if (!isset($_SESSION['adminUname']) || $_SESSION['Username'] !== 'hayu') {
                         <input type="submit" name="user" class="sm:hidden lg:block hover:text-yellow-500" value="Display user screen" />
                     </form>
                 </div>
+
+                <div class="flex gap-1 items-start cursor-pointer">
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+                        <i class="ri-logout-box-r-line "></i>
+                        <input type="submit" name="logout" value="Logout" class="hover:text-yellow-500">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="">
+            <div class="" style="padding: 30px 10px 20px 320px;" id="userDashboard">
+                <h2 class="text-sm font-bold text-yellow-500">Welcome, <?php echo $_SESSION['Username'] ?></h2>
+                <h1 class="text-2xl font-bold py-4">User Dashboard</h1>
+
+                <!-- Dashboard Summary Boxes -->
+                <div class="flex justify-between px-8">
+                    <!-- Total Students Box -->
+                    <div class="px-4 py-3 rounded-lg bg-gray-800 text-white shadow-xl my-8 flex flex-col items-center" style="width:300px; height:120px">
+                        <i class="ri-graduation-cap-line text-3xl"></i>
+                        <h2 class="text-lg font-bold">Total Students</h2>
+                        <p class="text-xl"><?php echo $totalStudents; ?></p>
+                    </div>
+
+                    <!-- Total Courses Box -->
+                    <div class="px-4 py-3 rounded-lg bg-gray-800 text-white shadow-xl my-8 flex flex-col items-center" style="width:300px; height:120px">
+                        <img src="../Syllabus.png" alt="Courses" class="w-10 h-10">
+                        <h2 class="text-lg font-bold">Total Courses</h2>
+                        <p class="text-xl"><?php echo $totalCourses; ?></p>
+                    </div>
+                </div>
