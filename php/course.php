@@ -169,3 +169,24 @@ if (isset($_SESSION['Username'])) {
           </p>
         </div>
       </div>
+
+      <div class="pb-5">
+        <input
+          id="prevBTN"
+          type="submit"
+          value="Previous"
+          class="px-3 py-1 rounded-sm bg-none cursor-pointer" />
+        <input
+          id="nextBTN"
+          type="submit"
+          value="Next"
+          class="px-6 py-1 rounded-sm bg-orange-600 text-white cursor-pointer" />
+      </div>
+    </div>
+  </main>
+
+  <script src="../index.js"></script>
+  <script src="../Front.js"></script>
+</body>
+
+</html>
