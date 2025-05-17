@@ -160,3 +160,34 @@ if (isset($_POST['continue'])) {
       <p class="text-gray-600" style="min-height: 100px;">You haven't enrolled in any courses yet.</p>
     <?php endif; ?>
   </div>
+  <!-- resource section  -->
+
+  <div class=" bg-gray-900 flex flex-col gap-2 items-center hidden" id="resource-container">
+    <h1 class="font-bold text-2xl text-yellow-500 py-1">Available Resources</h1>
+
+    <!-- Resource List -->
+    <div class="resource-list">
+      <ul id="resource-list" class="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 justify-center ">
+
+      </ul>
+    </div>
+  </div>
+  <!-- beyond basic section  -->
+
+  <div class=" bg-gray-900 w-full min-h-8 h-full flex items-center justify-center hidden" id="beyond-container" style="padding: 90px 0;">
+    <h1 class="text-green-500 font-bold text-3xl ">COMING SOON.......</h1>
+  </div>
+  </div>
+</main>
+<?php include "./footer.php"; ?>
+
+<!--------------------- link js ------------------->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+<script src="../index.js"></script>
+<script src="../mylearn.js"></script>
+<script src="../road.js"></script>
+</body>
+<?php $conn->close(); ?>
+
+</html>
