@@ -106,3 +106,57 @@ if (isset($_POST['continue'])) {
   </a>
 </div>
 </header>
+<!---------------- main section  ------------------->
+
+<main class="min-h-full">
+  <div class="flex items-center justify-evenly mt-7 mb-2 z-50">
+    <div
+      class="flex flex-row items-center gap-2 cursor-pointer pb-1" id="courseBtn">
+      <img src="../image/Online course.png" class="w-5 sm:w-8" />
+      <h2 class="hidden lg:block font-bold text-xl">My course</h2>
+    </div>
+
+    <div
+      class="flex flex-row items-center gap-2 cursor-pointer pb-1" id="resourceBtn">
+      <img src="../image/Bar graph.png" class="w-5 sm:w-8" />
+      <h2 class="hidden lg:block font-bold text-xl">Available Resources</h2>
+    </div>
+
+    <div
+      class="flex flex-row items-center gap-2 cursor-pointer pb-1" id="beyondBtn">
+      <img src="../image/Quality.png" class="w-5 sm:w-8" />
+      <h2 class="hidden lg:block font-bold text-xl">Beyond Basics</h2>
+    </div>
+
+  </div>
+
+  <!-- course section  -->
+  <div
+    class=" bg-gray-900 w-full grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-8 gap-6 justify-center courseBox pb-8" id="course-container">
+    <!-- <div class="flex flex-col items-center gap-2"> -->
+    <?php if (!empty($enrolled_course)): ?>
+      <?php foreach ($enrolled_course as $course): ?>
+        <div class="flex flex-col sm:my-3 items-center bg-gray-800 transition-300 w-[90%] px-1 py-1 rounded-lg">
+          <img src="./view_image.php?id=<?php echo $course['course_id']; ?>" alt="Course Image" draggable="false" />
+          <div class="flex flex-col sm:my-3 items-center gap-2 w-[90%] ">
+
+            <p class="text-xl font-bold mt-1 md:text-lg"><?php echo $course['course_name']; ?></p>
+            <div class="flex items-center gap-2 self-end">
+              <p>4.8</p>
+              <img
+                draggable="false"
+                class="w-16"
+                src="../thumbnail/rate.png" />
+            </div>
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+              <input type="hidden" name="course_id" value="<?php echo $course['course_id']; ?>">
+              <input type="submit" name="continue" value="Continue" class="bg-white text-black px-4 rounded-sm py-1 cursor-pointer" />
+            </form>
+          </div>
+
+        </div>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <p class="text-gray-600" style="min-height: 100px;">You haven't enrolled in any courses yet.</p>
+    <?php endif; ?>
+  </div>
