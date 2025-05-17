@@ -155,3 +155,27 @@ if (isset($_POST['comment'])) {
     </div>
 
   </section>
+  <!---------------- certificate  ----------------->
+
+  <section class="flex sm:flex-col lg:flex-row gap-2 item-center justify-center my-12 py-6 lg:px-12 px-4 w-full">
+    <div class=" sm:w-full flex flex-col items-start justify-center gap-8 p-4 lg:w-[60%]">
+      <h2 class="text-2xl font-bold ">Earn <span class="text-yellow-500">certification</span> with step-by-step coding courses </h2>
+      <div class=" flex items-center gap-4 w-full">
+        <div class="flex items-center gap-2 ">
+          <img src="../image/opportunity (1).png" class="w-10" alt="">
+          <p class="text-sm">Career Opportunities</p>
+        </div>
+        <div class="flex items-center gap-2 ">
+          <img src="../image/engagement (1).png" class="w-10" alt="">
+          <p class="text-sm">Learning Engagement</p>
+        </div>
+        <div class="flex items-center gap-2 ">
+          <img src="../image/growth (2).png" class="w-10" alt="">
+          <p class="text-sm">Personal Growth</p>
+        </div>
+      </div>
+    </div>
+    <div class=" sm:w-[80%] flex justify-center lg:w-[40%]">
+      <img src="../image/spridemy certificate-01.jpg" class=" shadow-lg">
+    </div>
+  </section>
