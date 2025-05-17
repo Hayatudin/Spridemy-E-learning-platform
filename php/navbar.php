@@ -100,3 +100,48 @@ if ($result && mysqli_num_rows($result) > 0) {
                             Roadmap
                         </li>
 
+
+                        <li>
+                            <a href="./mylearning.php" class="nav-link cursor-pointer font-bold text-lg">My Learning</a>
+                        </li>
+
+                        <li class="lg:hidden sm:block">
+                            <a href="./profile.php" class="nav-link cursor-pointer font-bold text-lg">Profile</a>
+                        </li>
+
+                        <div class="sm:hidden lg:flex items-center mt-4 lg:mt-0">
+                            <a href="./profile.php" class="z-50">
+                                <div class="bg-green-600 text-xl rounded-full text-white flex items-center justify-center font-semibold " style="width: 35px; height: 35px;">
+                                    <p class="pb-[3px] capitalize"><?php echo $firstLetter; ?></p>
+                                </div>
+                            </a>
+                        </div>
+                    </ul>
+            </div>
+            <div id="mega-menu" class="absolute top-14 left-0 w-full bg-gray-800 shadow-lg rounded-lg p-6 gap-8 flex justify-evenly items-start z-50 hidden text-center">
+                <!-- Column 1 -->
+                <div class="w-1/3">
+                    <h3 class="font-bold text-xl mb-4 text-yellow-500">Development</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./roadmap.php" class="block hover:text-yellow-500">Frontend Development</a></li>
+                        <li><a href="#" class="block hover:text-yellow-500">Backend Development</a></li>
+                        <li><a href="#" class="block hover:text-yellow-500">Application Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="w-1/3">
+                    <h3 class="font-bold text-xl mb-4 text-yellow-500">Specializations</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block hover:text-yellow-500">AI & Data Science</a></li>
+                        <li><a href="#" class="block hover:text-yellow-500">UI/UX Design</a></li>
+                        <li><a href="#" class="block hover:text-yellow-500">Cyber Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="text-2xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-3-line" id="Hamburger"></i>
+            </div>
+        </nav>
