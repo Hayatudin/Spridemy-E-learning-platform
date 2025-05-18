@@ -99,3 +99,41 @@ if (isset($_SESSION['Username'])) {
                 </ul>
             </div>
 
+
+
+        </nav>
+    </header>
+
+    <div class="px-12 w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" id="courseContainer">
+        <?php if (!empty($courses)): ?>
+            <?php foreach ($courses as $course): ?>
+                <div class="flex flex-col sm:my-3 items-center bg-gray-800 transition-300 w-[90%] px-1 py-1 rounded-lg">
+                    <img src="./view_image.php?id=<?php echo $course['id']; ?>" alt="image not found" draggable="false" />
+                    <div class="flex flex-col sm:my-3 items-center gap-2 w-[90%]">
+                        <p class="text-xl font-bold mt-1 md:text-lg"><?php echo $course['course_name']; ?></p>
+                        <div class="flex items-center gap-2 self-end">
+                            <p>4.8</p>
+                            <img draggable="false" class="w-16" src="../thumbnail/rate.png" alt="" />
+                        </div>
+                        <form action="./mylearning.php" method="POST">
+                            <input type="hidden" name="course_name" value="<?php echo $course['course_name']; ?>">
+                            <input type="hidden" name="course_id" value="<?php echo $course['id']; ?>">
+                            <input type="submit" name="Enroll" value="Enroll now" class="bg-white text-black px-4 rounded-sm py-1 cursor-pointer" />
+                        </form>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+</body>
+
+</html>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById("search-input");
+        searchInput.focus();
+    });
+</script>
