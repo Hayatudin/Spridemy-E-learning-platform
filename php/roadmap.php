@@ -50,3 +50,52 @@
             </div>
           </div>
         </div>
+        <!-- Timeline Item 3 -->
+        <div
+          class="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-6 lg:mb-10">
+          <div class="hidden lg:block lg:w-1/2"></div>
+          <div class="lg:w-1/2">
+            <div class="p-6 rounded-md shadow-lg">
+              <img
+                src="../lists/css-01.png"
+                draggable="false"
+                class="w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div
+          class="flex flex-col-reverse items-center lg:flex-row-reverse lg:items-start lg:space-x-6 lg:space-x-reverse lg:mb-10">
+          <div class="hidden lg:block lg:w-1/2"></div>
+          <div class="lg:w-1/2">
+            <div class="p-6 rounded-md shadow-lg">
+              <img src="../lists/js-01.png" draggable="false" class="w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div
+          class="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-6 lg:mb-10">
+          <div class="hidden lg:block lg:w-1/2"></div>
+          <div class="lg:w-1/2">
+            <div class="p-6 rounded-md shadow-lg">
+              <img src="../lists/VC-01.png" draggable="false" class="w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div
+          class="flex flex-col-reverse items-center lg:flex-row-reverse lg:items-start lg:space-x-6 lg:space-x-reverse lg:mb-10">
+          <div class="hidden lg:block lg:w-1/2"></div>
+          <div class="lg:w-1/2">
+            <div class="p-6 rounded-md shadow-lg">
+              <img
+                src="../lists/Framework-01.png"
+                draggable="false"
+                class="w-full" />
+            </div>
+          </div>
+        </div>
